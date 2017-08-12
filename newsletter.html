@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newsletter</title>
+    <script src="js/validation.js" type="text/javascript"></script>
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet" type="text/css">
+	
+  </head>
+  <body>
+  
+  <!-- navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">	   
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mnav">
+				<span class="glyphicon glyphicon-plus"></span>
+				</button>
+				<a class="navbar-brand text-uppercase">QUEENSTOWN</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="mnav">
+      			<ul class="nav navbar-nav" id="mainnav">
+					<li><a href="index.html">Home</a></li>
+        			<li><a href="attractions.html">Attractions</a></li>
+       				<li><a href="restaurants.html">Restaurants</a></li>
+					<li><a href="accommodation.html">Accommodation</a></li>
+        			<li><a href="gallery.html">Gallery</a></li>
+        			<li class="active"><a href="newsletter.html">Newsletter<span class="sr-only">(current)</span></a></li>
+				</ul>
+			<form class="navbar-form navbar-left" role="search" method="get" action="http://www.google.com/search">
+          	<input type="text" name="q" class="form-control" placeholder="Google Search">
+       		<button type="submit" class="btn btn-default" formtarget="new">Google</button>
+      		</form>
+			</div>
+		</div>
+	</nav><!-- /navigation -->
+
+    <!-- contents -->
+
+<!--START FULL SIZE TILE -->
+    <div class="fullSizeTile">
+        <div class="fullSizeTile-bg">                                
+            <div class="imgToBackground">                        
+                <img src="img/newsletter_back.jpg" alt="" class="maxwidth" />                        
+            </div>                   
+        </div>
+    </div>
+  
+    <div class="fullSizeTile-container">
+        <div class="fullSizeTile-container">
+            <div class="fullSizeTile-wrapper">
+                <div class="fullTileHeader">
+                    <div class="container">
+                        <div class="col-lg-6">
+                        <h2>NEWSLETTER SIGN-UP</h2>
+                        <br>
+                            <form name="myForm" action="success.html"
+                onsubmit="return validateForm()" method="post">
+                                <div class="form-group">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First name must be at least 3 letters">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last name must be at least 5 letters">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                                </div>         
+                                <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="checkAgree" id="checkAgree">I have read and accept all the terms and conditions and privacy policy. 
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-default">SIGN UP</button>
+                            </form>
+                            <br>
+                            <br>
+                        </div>        
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+<!--END FULL SIZE TILE -->  
+
+    <!--footer-->	                       
+	<footer class="container-fluid newstop">
+		<div class="row">
+			<div class="col-sm-5 footer">
+				<ul class="list-inline text-center" >
+				<li><a href="https://www.facebook.com/QueenstownNZ" target="new"><img src="img/facebook.png" class="img-rounded" alt="facebook"></a></li>
+				<li><a href="https://twitter.com/purequeenstown" target="new"><img src="img/twitter.png" class="img-rounded" alt="twitter"></a></li>
+				<li><a href="https://www.instagram.com/queenstownnz/" target="new"><img src="img/instagram.png" class="img-rounded" alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/c/queenstownnz/" target="new"><img src="img/youtube.png" class="img-rounded" alt="youtube"></a></li>
+                <li><a href="https://plus.google.com/+queenstownnz/" target="new"><img src="img/google.png" class="img-rounded" alt="google+"></a></li>
+				<li class="text-uppercase">&copy; 2016 IWD Assignment 1. All rights reserved. Chong Wang</li>
+				</ul>
+			</div>
+			<div class="col-sm-7 footer">
+				<ul class="list-inline text-center">
+				<li><a href="https://www.lonelyplanet.com/new-zealand/queenstown-and-wanaka/queenstown" target="new"><img src="img/logo-lp.png" class="img-rounded" alt="lonely planet"></a></li>
+				<li><a href="http://www.queenstownnz.co.nz/" target="new"><img src="img/logo-qsdofficial.png" class="img-rounded" alt="queenstown official"></a></li>
+				<li><a href="http://www.queenstown.com/" target="new"><img src="img/logo-qsdotcom.png" class="img-rounded" alt="queenstowndotcom"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>                 
+
+    
+
+
+  </body>
+</html>
